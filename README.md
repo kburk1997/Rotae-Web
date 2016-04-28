@@ -1,2 +1,3 @@
 # Rotae-Web
-A Web port of the iOS app, Rotae.
+An open-source, non-linear task organizer for Web. Originally developed for iOS at BrickHack 2016.
+
