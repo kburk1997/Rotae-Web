@@ -10,6 +10,8 @@
     <tr>
       <td><%= task.task_name %></td>
       <td><%= task.task_time %></td>
+      <td><%=link_to 'Show', task_path(task)%></td>
+      <td><%=link_to 'Edit', edit_task_path(task)%></td>
     </tr>
   <% end %>
 </table>
