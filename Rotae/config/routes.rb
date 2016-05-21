@@ -1,4 +1,10 @@
+#!/bin/env ruby
+# encoding: utf-8
 Rotae::Application.routes.draw do
+  resources :tasks
+
+  get 'welcome' => 'pages#home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

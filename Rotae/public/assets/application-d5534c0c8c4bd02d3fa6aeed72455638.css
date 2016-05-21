@@ -1,0 +1,30 @@
+/*
+
+
+*/
+
+
+background {
+  color: #FFCF91; }
+
+/*# sourceMappingURL=application.css.map */
+{
+"version": 3,
+"mappings": "AAMA,UAAU;EACT,KAAK,EAHY,OAAO",
+"sources": ["pages.css.scss"],["tasks.css.scss"],
+"names": [],
+"file": "application.css"
+}
+/* line 10, /home/katie/code/Rotae-Web/Rotae/app/assets/stylesheets/pages.css.scss */
+background {
+  color: #ffcf91;
+}
+/* line 9, /home/katie/code/Rotae-Web/Rotae/app/assets/stylesheets/tasks.css.scss */
+background {
+  color: #ffcf91;
+}
+
+/* line 13, /home/katie/code/Rotae-Web/Rotae/app/assets/stylesheets/tasks.css.scss */
+body {
+  font-family: KozGoPro-Light;
+}
