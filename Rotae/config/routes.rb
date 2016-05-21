@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 Rotae::Application.routes.draw do
-  resources :tasks
+  resources :tasks #plural
 
   get 'welcome' => 'pages#home'
 
