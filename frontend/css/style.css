@@ -1,0 +1,160 @@
+/*Fontawesome Iconfont*/
+@import url(http://thecodeplayer.com/uploads/fonts/font-awesome-4.0.1/css/font-awesome.min.css);
+/*Montserrat, Open Sans*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,300);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+}
+
+.mobile {
+  float: left;
+  position: relative;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/*Hiding the checkbox*/
+#tm {
+  display: none;
+}
+
+/*Content area*/
+.mobile section {
+  background: #FFCA96;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  transition: all 0.25s;
+}
+
+.mobile section label {
+  color: white;
+  font: bold 24px Montserrat;
+  text-align: center;
+  border: none;
+  display: block;
+  padding: 0 0;
+  width: 10%;
+  position: absolute;
+  left: 2px;
+  top: 2%;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/*Nav styles*/
+.sidenav {
+  background: #323c3c;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 100px;
+}
+
+.sidenav li {
+  list-style-type: none;
+}
+
+.sidenav a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidenav b {
+  font: bold 12px/48px Montserrat;
+  display: block;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.4s;
+}
+
+.sidenav i {
+  display: block;
+  width: 40px;
+  float: left;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+}
+
+/*Animation controls using checkbox hack*/
+/*Animate content area to the right*/
+#tm:checked ~ section {
+  transform: translateX(150px);
+}
+
+/*Animate links from right to left + fade in effect*/
+#tm:checked ~ .sidenav b {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*Adding delay to link animation - in multiples of .08s*/
+/*One can use jQuery also for creating the delayed effect. But I will stick to manual CSS for this walkthrough.*/
+#tm:checked ~ .sidenav li:nth-child(1) b {
+  transition-delay: 0.08s;
+}
+
+#tm:checked ~ .sidenav li:nth-child(2) b {
+  transition-delay: 0.16s;
+}
+
+#tm:checked ~ .sidenav li:nth-child(3) b {
+  transition-delay: 0.24s;
+}
+
+#tm:checked ~ .sidenav li:nth-child(4) b {
+  transition-delay: 0.32s;
+}
+
+#tm:checked ~ .sidenav li:nth-child(5) b {
+  transition-delay: 0.40s;
+}
+
+#tm:checked ~ .sidenav li:nth-child(6) b {
+  transition-delay: 0.48s;
+}
+
+.task-wheel {
+  position: relative;
+  top: 150px;
+  left: 300px;
+}
+
+.task-wheel-base {
+  width: 600px;
+  height: 600px;
+  background: #666;
+  position: relative;
+  border-radius: 307px;
+  border: 7px solid white;
+}
+
+.time-marker {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 50px solid white;
+  position: relative;
+  left: 612px;
+  top: -300px;
+  /*border-radius: 30px;*/
+}
+
+.break-marker {
+  width: 14px;
+  height: 14px;
+  background: black;
+  position: relative;
+  left: -3px;
+  top: -300px;
+  border-radius: 14px;
+}
